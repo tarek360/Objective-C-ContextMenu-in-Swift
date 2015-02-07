@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="41g-hN-t8J">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--CupCake-->
+        <scene sceneID="zdx-cw-Sj7">
+            <objects>
+                <viewController id="LF2-M5-HIu" userLabel="CupCake" customClass="MainViewController" customModule="SwiftContextMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ptr-uv-mOs"/>
+                        <viewControllerLayoutGuide type="bottom" id="tqD-1q-AZH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lTB-EG-31u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Photo" translatesAutoresizingMaskIntoConstraints="NO" id="RBH-zA-D7J">
+                                <rect key="frame" x="0.0" y="44" width="600" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4OC-6l-p75"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="run-w8-zYL">
+                                <rect key="frame" x="10" y="269" width="600" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="POA-Bn-u8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTj-OI-FiN">
+                                <rect key="frame" x="10" y="313" width="580" height="278"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RBH-zA-D7J" firstAttribute="leading" secondItem="lTB-EG-31u" secondAttribute="leading" id="5Ep-ZW-cqf"/>
+                            <constraint firstItem="cTj-OI-FiN" firstAttribute="top" secondItem="run-w8-zYL" secondAttribute="bottom" constant="12" id="8xo-v3-OVX"/>
+                            <constraint firstItem="run-w8-zYL" firstAttribute="top" secondItem="RBH-zA-D7J" secondAttribute="bottom" constant="25" id="A7F-f8-Ih3"/>
+                            <constraint firstAttribute="trailing" secondItem="cTj-OI-FiN" secondAttribute="trailing" constant="10" id="SCa-0J-Xsg"/>
+                            <constraint firstItem="run-w8-zYL" firstAttribute="leading" secondItem="lTB-EG-31u" secondAttribute="leading" constant="10" id="U8g-5h-jdu"/>
+                            <constraint firstAttribute="trailing" secondItem="RBH-zA-D7J" secondAttribute="trailing" id="VZ6-Mj-Vvq"/>
+                            <constraint firstItem="tqD-1q-AZH" firstAttribute="top" secondItem="cTj-OI-FiN" secondAttribute="bottom" constant="10" id="coN-Y0-1Fo"/>
+                            <constraint firstItem="cTj-OI-FiN" firstAttribute="leading" secondItem="lTB-EG-31u" secondAttribute="leading" constant="10" id="nbY-bH-mVe"/>
+                            <constraint firstItem="RBH-zA-D7J" firstAttribute="top" secondItem="ptr-uv-mOs" secondAttribute="bottom" id="nbr-bI-l3N"/>
+                            <constraint firstItem="run-w8-zYL" firstAttribute="trailing" secondItem="lTB-EG-31u" secondAttribute="trailing" constant="10" id="pFI-KN-Ij0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="CupCake" id="ram-2m-C1Z" userLabel="CupCake">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JVz-tI-C31">
+                            <connections>
+                                <action selector="presentMenuButtonTapped:" destination="LF2-M5-HIu" id="SEU-Oj-Scn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a2N-bY-6Bo" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2395" y="287"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6sN-UK-LHR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="41g-hN-t8J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qdj-gs-BwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="LF2-M5-HIu" kind="relationship" relationship="rootViewController" id="cpp-Iy-SIw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgR-dq-ztU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1583" y="287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo" width="512" height="384"/>
+    </resources>
+</document>
