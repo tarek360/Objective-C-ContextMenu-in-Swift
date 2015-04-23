@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F54B20A91B6CD06E00085610 /* ContextMenuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F54B20A81B6CD06E00085610 /* ContextMenuCell.m */; };
+		F54B20AB1B6CEB2800085610 /* ContextMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B20AA1B6CEB2800085610 /* ContextMenuCell.swift */; };
 		F5C66C6E1B6C55AC000A656A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C66C6D1B6C55AC000A656A /* AppDelegate.swift */; };
 		F5C66C701B6C55AC000A656A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C66C6F1B6C55AC000A656A /* MainViewController.swift */; };
 		F5C66C731B6C55AC000A656A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C66C711B6C55AC000A656A /* Main.storyboard */; };
@@ -31,8 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F54B20A71B6CD06E00085610 /* ContextMenuCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextMenuCell.h; sourceTree = "<group>"; };
-		F54B20A81B6CD06E00085610 /* ContextMenuCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextMenuCell.m; sourceTree = "<group>"; };
+		F54B20AA1B6CEB2800085610 /* ContextMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextMenuCell.swift; sourceTree = "<group>"; };
 		F5C66C681B6C55AC000A656A /* SwiftContextMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftContextMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C66C6C1B6C55AC000A656A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5C66C6D1B6C55AC000A656A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,8 +137,6 @@
 				F5C66C911B6C57E5000A656A /* YALContextMenuCell.h */,
 				F5C66C921B6C57E5000A656A /* YALContextMenuTableView.h */,
 				F5C66C931B6C57E5000A656A /* YALContextMenuTableView.m */,
-				F54B20A71B6CD06E00085610 /* ContextMenuCell.h */,
-				F54B20A81B6CD06E00085610 /* ContextMenuCell.m */,
 				F5C66C8E1B6C57E4000A656A /* SwiftContextMenu-Bridging-Header.h */,
 			);
 			name = YALContextMenu;
@@ -149,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				F5C66C971B6C5A74000A656A /* ContextMenuCell.xib */,
+				F54B20AA1B6CEB2800085610 /* ContextMenuCell.swift */,
 			);
 			name = ContextMenuCell;
 			sourceTree = "<group>";
@@ -256,9 +254,9 @@
 			files = (
 				F5C66C941B6C57E5000A656A /* UIView+YALConstraints.m in Sources */,
 				F5C66C701B6C55AC000A656A /* MainViewController.swift in Sources */,
+				F54B20AB1B6CEB2800085610 /* ContextMenuCell.swift in Sources */,
 				F5C66C6E1B6C55AC000A656A /* AppDelegate.swift in Sources */,
 				F5C66C9C1B6C5D55000A656A /* YALNavigationBar.swift in Sources */,
-				F54B20A91B6CD06E00085610 /* ContextMenuCell.m in Sources */,
 				F5C66C951B6C57E5000A656A /* YALContextMenuTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
