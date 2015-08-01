@@ -54,16 +54,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func presentMenuButtonTapped(sender: UIBarButtonItem) {
         
         // init YALContextMenuTableView tableView
-        //if self.contextMenuTableView != nil {
-            
-            self.contextMenuTableView = YALContextMenuTableView(tableViewDelegateDataSource: self)
-            self.contextMenuTableView!.animationDuration = 0.11;
-            //optional - implement custom YALContextMenuTableView custom protocol
-            self.contextMenuTableView!.yalDelegate = self
-            var cellNib = UINib(nibName: "ContextMenuCell", bundle: nil)
-            self.contextMenuTableView?.registerNib(cellNib, forCellReuseIdentifier: menuCellIdentifier)
-        //}
-
+        self.contextMenuTableView = YALContextMenuTableView(tableViewDelegateDataSource: self)
+        self.contextMenuTableView!.animationDuration = 0.11;
+        //optional - implement custom YALContextMenuTableView custom protocol
+        self.contextMenuTableView!.yalDelegate = self
+        var cellNib = UINib(nibName: "ContextMenuCell", bundle: nil)
+        self.contextMenuTableView?.registerNib(cellNib, forCellReuseIdentifier: menuCellIdentifier)
+        
         // it is better to use this method only for proper animation
         self.contextMenuTableView?.showInView(self.navigationController!.view, withEdgeInsets: UIEdgeInsetsZero, animated: true)
     }
